@@ -14,13 +14,13 @@ const Footer = () => {
 
   return (
     <footer className="bg-background border-t border-border">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div className="container mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
             <img src={logo} alt="Alternativa Internet" className="h-14 w-auto mb-4" />
             <p className="text-muted-foreground max-w-md mb-6">
-              Sua melhor alternativa em internet banda larga e serviços de streaming. 
+              Sua melhor alternativa em internet banda larga e serviços de streaming.
               Conexão de qualidade para sua casa ou empresa.
             </p>
             <div className="flex gap-4">
@@ -86,6 +86,17 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
             © {currentYear} ALTERNATIVA INTERNET & SERVIÇOS. Todos os direitos reservados.
+          </p>
+          <p className="text-muted-foreground text-sm mt-2">
+            Produzida com 💚 por{" "}
+            <a
+              href="https://camaly.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary/80 transition-colors duration-300 font-medium"
+            >
+              Camaly
+            </a>
           </p>
         </div>
       </div>

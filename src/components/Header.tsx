@@ -41,7 +41,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
             <Button variant="whatsapp" asChild>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 Falar no WhatsApp
               </a>
@@ -73,7 +73,7 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="whatsapp" className="mt-4" asChild>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                   <MessageCircle className="w-5 h-5" />
                   Falar no WhatsApp
                 </a>
